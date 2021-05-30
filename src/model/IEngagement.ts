@@ -5,7 +5,7 @@ export default interface IEngagement {
   Name: string
   Industry: string
   CreatedOn: Date
-  status: string
+  Status: string
   RolloffDate: Date
   Archived: boolean
 }

@@ -1,4 +1,3 @@
-import { createContext } from 'react'
 import IUser from './model/IUser'
 import IEngagement from './model/IEngagement'
 
@@ -30,7 +29,7 @@ export async function getEngagements(): Promise<IEngagement[]> {
       CreatedOn: u.CreatedOn,
       Archived: u.Archived,
       RolloffDate: u.RolloffDate,
-      status: u.Status,
+      Status: u.Status,
     }
 
     return usr

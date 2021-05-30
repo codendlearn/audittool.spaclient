@@ -6,5 +6,6 @@ export interface IGlobalState {
   user?: IUser
   busy: boolean
   error: boolean
-  errorMessage?: string
+  errorMessage?: string,
+  pageTitle?: string
 }
