@@ -9,10 +9,10 @@ import { classNames } from "../src/Utils/StyleUtls"
 const Dashboard = () => {
   return (
     <div>
-      <div className="px-4 pb-4 mx-auto sm:px-6 lg:px-8">
+      <div className="pb-4 mx-auto ">
         <PendingProjects />
       </div>
-      <div className="px-4 mx-auto sm:px-6 lg:px-8">
+      <div className="">
         <h2 className="text-lg font-medium leading-6 text-gray-900">
           Overview
         </h2>
@@ -60,7 +60,7 @@ const Dashboard = () => {
         </div>
       </div>
 
-      <h2 className="px-4 mx-auto mt-8 text-lg font-medium leading-6 text-gray-900 sm:px-6 lg:px-8">
+      <h2 className="mt-8 text-lg font-medium leading-6 text-gray-900">
         Recent activity
       </h2>
 

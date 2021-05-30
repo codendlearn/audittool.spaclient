@@ -59,6 +59,8 @@ const reducer = (state: IGlobalState, action: GlobalAction): IGlobalState => {
       return { ...state, user: action.user }
     case GlobalStateAction.LogOut:
       return { ...state, user: undefined }
+    case GlobalStateAction.SetTitle:
+      return { ...state, pageTitle: action.title }
     default:
       return state
   }

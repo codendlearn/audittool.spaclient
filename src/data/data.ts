@@ -14,65 +14,16 @@ const navigation: INavigationItem[] = [
     name: "Dashboard",
     icon: HomeIcon,
     path: "/dashboard",
-    children: [],
   },
   {
     name: "Team",
-    path: "/teams",
     icon: UsersIcon,
-    children: [
-      { name: "Overview", path: "#" },
-      { name: "Members", path: "#" },
-      { name: "Calendar", path: "#" },
-      { name: "Settings", path: "#" },
-    ],
+    path: "/team",
   },
   {
     name: "Projects",
     icon: FolderIcon,
-    path: "/dashboard",
-
-    children: [
-      { name: "Overview", path: "#" },
-      { name: "Members", path: "#" },
-      { name: "Calendar", path: "#" },
-      { name: "Settings", path: "#" },
-    ],
-  },
-  {
-    name: "Calendar",
-    icon: CalendarIcon,
-    path: "/dashboard",
-    children: [
-      { name: "Overview", path: "#" },
-      { name: "Members", path: "#" },
-      { name: "Calendar", path: "#" },
-      { name: "Settings", path: "#" },
-    ],
-  },
-  {
-    name: "Documents",
-    path: "/dashboard",
-    icon: InboxIcon,
-
-    children: [
-      { name: "Overview", path: "#" },
-      { name: "Members", path: "#" },
-      { name: "Calendar", path: "#" },
-      { name: "Settings", path: "#" },
-    ],
-  },
-  {
-    path: "/dashboard",
-    name: "Reports",
-    icon: ChartBarIcon,
-
-    children: [
-      { name: "Overview", path: "#" },
-      { name: "Members", path: "#" },
-      { name: "Calendar", path: "#" },
-      { name: "Settings", path: "#" },
-    ],
+    path: "/projects",
   },
 ]
 
@@ -120,7 +71,7 @@ const projects = [
     bgColorClass: "bg-blue-600",
   },
   {
-    id: 1,
+    id: 2,
     title: "GraphQL API",
     initials: "GA",
     team: "Engineering",
@@ -156,7 +107,7 @@ const projects = [
     bgColorClass: "bg-yellow-600",
   },
   {
-    id: 1,
+    id: 3,
     title: "GraphQL API",
     initials: "GA",
     team: "Engineering",
@@ -192,7 +143,7 @@ const projects = [
     bgColorClass: "bg-indigo-600",
   },
   {
-    id: 1,
+    id: 4,
     title: "GraphQL API",
     initials: "GA",
     team: "Engineering",
@@ -228,7 +179,7 @@ const projects = [
     bgColorClass: "bg-pink-600",
   },
   {
-    id: 1,
+    id: 5,
     title: "GraphQL API",
     initials: "GA",
     team: "Engineering",
@@ -263,15 +214,34 @@ const projects = [
     pinned: true,
     bgColorClass: "bg-gray-600",
   },
-  // More projects...
 ]
 
 const cards = [
   { name: "Account balance", href: "#", icon: ScaleIcon, amount: "$30,659.45" },
-  { name: "Account balance", href: "#", icon: ScaleIcon, amount: "$30,659.45" },
-  { name: "Account balance", href: "#", icon: ScaleIcon, amount: "$30,659.45" },
-  { name: "Account balance", href: "#", icon: ScaleIcon, amount: "$30,659.45" },
-  { name: "Account balance", href: "#", icon: ScaleIcon, amount: "$30,659.45" },
+  {
+    name: "Account balance1",
+    href: "#",
+    icon: ScaleIcon,
+    amount: "$30,659.45",
+  },
+  {
+    name: "Account balance2",
+    href: "#",
+    icon: ScaleIcon,
+    amount: "$30,659.45",
+  },
+  {
+    name: "Account balance3",
+    href: "#",
+    icon: ScaleIcon,
+    amount: "$30,659.45",
+  },
+  {
+    name: "Account balance4",
+    href: "#",
+    icon: ScaleIcon,
+    amount: "$30,659.45",
+  },
   // More items...
 ]
 
@@ -287,7 +257,7 @@ const transactions = [
     datetime: "2020-07-11",
   },
   {
-    id: 1,
+    id: 2,
     name: "Payment to Molly Sanders",
     href: "#",
     amount: "$20,000",
@@ -297,7 +267,7 @@ const transactions = [
     datetime: "2020-07-11",
   },
   {
-    id: 1,
+    id: 3,
     name: "Payment to Molly Sanders",
     href: "#",
     amount: "$20,000",
@@ -307,7 +277,7 @@ const transactions = [
     datetime: "2020-07-11",
   },
   {
-    id: 1,
+    id: 4,
     name: "Payment to Molly Sanders",
     href: "#",
     amount: "$20,000",
@@ -317,7 +287,7 @@ const transactions = [
     datetime: "2020-07-11",
   },
   {
-    id: 1,
+    id: 5,
     name: "Payment to Molly Sanders",
     href: "#",
     amount: "$20,000",
@@ -327,7 +297,7 @@ const transactions = [
     datetime: "2020-07-11",
   },
   {
-    id: 1,
+    id: 6,
     name: "Payment to Molly Sanders",
     href: "#",
     amount: "$20,000",

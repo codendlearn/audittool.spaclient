@@ -1,19 +1,15 @@
 import { Dialog, Menu, Transition } from "@headlessui/react"
 import {
   BellIcon,
-  CashIcon,
-  CheckCircleIcon,
   ChevronDownIcon,
-  ChevronRightIcon,
   MenuAlt1Icon,
-  OfficeBuildingIcon,
   SearchIcon,
   XIcon,
 } from "@heroicons/react/outline"
 import React, { Fragment, useState } from "react"
 import { data } from "../data/data"
-import { hasKey } from "../Utils/JSUtils"
 import { classNames } from "../Utils/StyleUtls"
+import PageTitle from "./PageTitle"
 import Sidebar from "./Sidebar"
 
 const Layout: React.FC = (props) => {
@@ -95,9 +91,7 @@ const Layout: React.FC = (props) => {
           {/* Search bar */}
           <div className="flex items-center justify-between flex-1 px-4 sm:px-6 lg:mx-auto lg:px-8">
             <div className="flex items-center flex-1">
-              <h1 className="text-lg font-bold leading-6 text-gray-900 sm:truncate">
-                Home
-              </h1>
+              <PageTitle />
             </div>
             <div className="flex p-2 rounded-md flex-0 focus:outline-none focus:ring-0 focus:ring-cyan-500">
               <form className="flex w-full md:ml-0" action="#" method="GET">
@@ -210,7 +204,9 @@ const Layout: React.FC = (props) => {
           </div>
         </div>
         <main className="relative z-0 flex-1 pb-8 overflow-y-auto">
-          <div className="mt-8">{props.children}</div>
+          <div className="px-4 mx-auto mt-8 sm:px-6 lg:px-8">
+            {props.children}
+          </div>
         </main>
       </div>
     </div>
